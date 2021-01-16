@@ -52,6 +52,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GPContext.cs" />
+    <Compile Include="Migrations\202101162007100_InitialCreate.cs" />
+    <Compile Include="Migrations\202101162007100_InitialCreate.designer.cs">
+      <DependentUpon>202101162007100_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101162143523_Image.cs" />
+    <Compile Include="Migrations\202101162143523_Image.designer.cs">
+      <DependentUpon>202101162143523_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101162147251_ModifyNameImage.cs" />
+    <Compile Include="Migrations\202101162147251_ModifyNameImage.designer.cs">
+      <DependentUpon>202101162147251_ModifyNameImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101162204143_Address.cs" />
+    <Compile Include="Migrations\202101162204143_Address.designer.cs">
+      <DependentUpon>202101162204143_Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101162251078_Annotations.cs" />
+    <Compile Include="Migrations\202101162251078_Annotations.designer.cs">
+      <DependentUpon>202101162251078_Annotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +84,23 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101162007100_InitialCreate.resx">
+      <DependentUpon>202101162007100_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101162143523_Image.resx">
+      <DependentUpon>202101162143523_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101162147251_ModifyNameImage.resx">
+      <DependentUpon>202101162147251_ModifyNameImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101162204143_Address.resx">
+      <DependentUpon>202101162204143_Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101162251078_Annotations.resx">
+      <DependentUpon>202101162251078_Annotations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

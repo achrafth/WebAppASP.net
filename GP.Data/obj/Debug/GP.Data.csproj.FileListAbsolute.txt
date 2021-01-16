@@ -13,3 +13,9 @@ D:\.net\my-app\GP.Data\obj\Debug\GP.Data.csproj.CoreCompileInputs.cache
 D:\.net\my-app\GP.Data\obj\Debug\GP.Data.csproj.CopyComplete
 D:\.net\my-app\GP.Data\obj\Debug\GP.Data.dll
 D:\.net\my-app\GP.Data\obj\Debug\GP.Data.pdb
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.InitialCreate.resources
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.csproj.GenerateResource.cache
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.Image.resources
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.ModifyNameImage.resources
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.Address.resources
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.Annotations.resources

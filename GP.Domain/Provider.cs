@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +11,17 @@ namespace GP.Domain
     public class Provider : Concept
     {
         public DateTime DateCreated { get; set; }
+        [Required, EmailAddress]
         public string Email { get; set; }
+        [Key] //Optional!
         public int Id { get; set; }
         public bool IsApproved { get; set; }
         private string password;
         private string confirmPassword;
+        [NotMapped]
+        [Required(ErrorMessage = "Confirm Password is required")]
+        [DataType(DataType.Password)]
+        [Compare("Password")]
         public string ConfirmPassword
         {
             get { return confirmPassword; }
@@ -28,6 +36,9 @@ namespace GP.Domain
                 }
             }
         }
+        [Required(ErrorMessage = "Password is required")]
+        [DataType(DataType.Password)]
+        [MinLength(8)]
         public string Password
         {
             get { return password; }

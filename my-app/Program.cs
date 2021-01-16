@@ -398,7 +398,7 @@ namespace my_app
             Apple.GetDetails();
             System.Console.WriteLine("Return True if the Product Apple belongs to the Category Fruit: ");
             System.Console.WriteLine(manageProduct.InCategory(Fruit, Apple));
-            System.Console.ReadKey();*/
+            System.Console.ReadKey();
             GPContext X = new GPContext();
             Provider Sater = new Provider()
             {
@@ -408,7 +408,7 @@ namespace my_app
             };
             X.Providers.Add(Sater);
             X.SaveChanges();
-            System.Console.WriteLine("DATABASE CREATED!");
+            System.Console.WriteLine("DATABASE CREATED!");*/
             System.Console.ReadKey();
         }
     }

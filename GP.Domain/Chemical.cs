@@ -8,9 +8,10 @@ namespace GP.Domain
 {
     public class Chemical : Product
     {
-        public string City { get; set; }
+        //public string City { get; set; }
         public string LabName { get; set; }
-        public string StreetAddress { get; set; }
+        public Address Address { get; set; }
+        //public string StreetAddress { get; set; }
         public override void GetMyType()
         {
             System.Console.WriteLine(" Type: CHEMICAL ");
@@ -18,7 +19,7 @@ namespace GP.Domain
         public override void GetDetails()
         {
             base.GetDetails();
-            System.Console.WriteLine("LabName: " + LabName + " City : " + City + " StreetAdress: " + StreetAddress);
+            System.Console.WriteLine("LabName: " + LabName + " City : " + Address.City + " StreetAdress: " + Address.StreetAddress);
         }
     }
 }
