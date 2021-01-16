@@ -1,0 +1,9 @@
+D:\.net\my-app\GP.Service\bin\Debug\GP.Service.dll
+D:\.net\my-app\GP.Service\bin\Debug\GP.Service.pdb
+D:\.net\my-app\GP.Service\bin\Debug\GP.Domain.dll
+D:\.net\my-app\GP.Service\bin\Debug\GP.Domain.pdb
+D:\.net\my-app\GP.Service\obj\Debug\GP.Service.csprojAssemblyReference.cache
+D:\.net\my-app\GP.Service\obj\Debug\GP.Service.csproj.CoreCompileInputs.cache
+D:\.net\my-app\GP.Service\obj\Debug\GP.Service.csproj.CopyComplete
+D:\.net\my-app\GP.Service\obj\Debug\GP.Service.dll
+D:\.net\my-app\GP.Service\obj\Debug\GP.Service.pdb

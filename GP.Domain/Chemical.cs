@@ -13,7 +13,7 @@ namespace GP.Domain
         public string StreetAddress { get; set; }
         public override void GetMyType()
         {
-            System.Console.WriteLine(" Type: CHEMICAL");
+            System.Console.WriteLine(" Type: CHEMICAL ");
         }
         public override void GetDetails()
         {

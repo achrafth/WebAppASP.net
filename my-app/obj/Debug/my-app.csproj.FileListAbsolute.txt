@@ -1,10 +1,12 @@
 D:\.net\my-app\my-app\bin\Debug\my-app.exe.config
 D:\.net\my-app\my-app\bin\Debug\my-app.exe
 D:\.net\my-app\my-app\bin\Debug\my-app.pdb
+D:\.net\my-app\my-app\bin\Debug\GP.Domain.dll
+D:\.net\my-app\my-app\bin\Debug\GP.Service.dll
+D:\.net\my-app\my-app\bin\Debug\GP.Domain.pdb
+D:\.net\my-app\my-app\bin\Debug\GP.Service.pdb
 D:\.net\my-app\my-app\obj\Debug\my-app.csprojAssemblyReference.cache
 D:\.net\my-app\my-app\obj\Debug\my-app.csproj.CoreCompileInputs.cache
+D:\.net\my-app\my-app\obj\Debug\my-app.csproj.CopyComplete
 D:\.net\my-app\my-app\obj\Debug\my-app.exe
 D:\.net\my-app\my-app\obj\Debug\my-app.pdb
-D:\.net\my-app\my-app\bin\Debug\GP.Domain.dll
-D:\.net\my-app\my-app\bin\Debug\GP.Domain.pdb
-D:\.net\my-app\my-app\obj\Debug\my-app.csproj.CopyComplete

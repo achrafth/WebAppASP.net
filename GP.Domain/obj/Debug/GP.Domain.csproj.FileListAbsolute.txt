@@ -1,6 +1,5 @@
 D:\.net\my-app\GP.Domain\bin\Debug\GP.Domain.dll
 D:\.net\my-app\GP.Domain\bin\Debug\GP.Domain.pdb
-D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.csprojAssemblyReference.cache
 D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.csproj.CoreCompileInputs.cache
 D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.dll
 D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.pdb

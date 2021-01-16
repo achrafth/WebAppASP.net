@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GP.Service;
 
 namespace my_app
 {
@@ -13,7 +14,7 @@ namespace my_app
         {
             //Console.WriteLine("Hi Achraf!");
             //Console.ReadKey(); //Make the console lasts
-            Category C1 = new Category() { Name = "CAT1", CategoryId = 1 };
+            /*Category C1 = new Category() { Name = "CAT1", CategoryId = 1 };
             Category C2 = new Category() { Name = "CAT2", CategoryId = 2 };
             Category C3 = new Category() { Name = "CAT3", CategoryId = 3 };
 
@@ -169,7 +170,7 @@ namespace my_app
             System.Console.WriteLine("///////////////////////////////////////////////////////////////");
             System.Console.WriteLine("--- Custom display with ProductId of Provider 3 & 5 ---");
             PROV3.GetProducts("ProductId", "4");
-            PROV5.GetProducts("ProductId", "6");/*
+            PROV5.GetProducts("ProductId", "6");
             ------------------------------------------
             //With Value
             Provider P1 = new Provider();
@@ -199,6 +200,203 @@ namespace my_app
             Provider.SetIsApproved(P3);
             System.Console.WriteLine("Password: " + P3.Password);
             System.Console.WriteLine(P3.IsApproved);*/
+            Category Fruit = new Category()
+            { Name = "Fruit" };
+            Category Alimentaire = new Category()
+            { Name = "Alimentaire" };
+
+            Product AcideCitrique = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Acide Citrique",
+                Description = "Monohydrate-E330-USP32",
+                Category = Alimentaire,
+                Price = 90,
+                Quantity = 30,
+                City = "Sousse"
+            };
+            Product CacaoNaturelle = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Poudre de Cacao Naturelle",
+                Description = "10% - 12%",
+                Category = Alimentaire,
+                Price = 419,
+                Quantity = 80,
+                City = "Sfax"
+            };
+            Product CacoaAlcalinisee = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Poudre de Cacao Alcalinisée",
+                Description = "10% - 12%",
+                Category = Alimentaire,
+                Price = 7,
+                Quantity = 300,
+                City = "Sfax"
+            };
+            Product Dioxyde = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Dioxyde De Titane",
+                Description = "TiO2 grade alimentaire, cosmétique et pharmaceutique",
+                Category = Alimentaire,
+                Price = 200,
+                Quantity = 50,
+                City = "Tunis"
+            };
+            Product Amidon = new Chemical()
+            {
+                Name = "Amidon De Maïs",
+                Description = "Amidon de maïs natif",
+                Category = Alimentaire,
+                Price = 70,
+                Quantity = 30,
+                City = "Tunis"
+            };
+            Product BlackBerry = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Description = "BlackBerry",
+                Category = Fruit,
+                Name = "BlackBerry",
+                Price = 60,
+                ProductId = 0,
+                Quantity = 0
+            };
+            Product Apple = new Biological()
+            {
+                Description = "",
+                Category = Fruit,
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Apple",
+                Price = 100.00,
+                ProductId = 0,
+                Quantity = 100
+            };
+
+            List<Product> products = new List<Product>
+            { Dioxyde, Amidon, CacoaAlcalinisee, BlackBerry, Apple, AcideCitrique, CacaoNaturelle};
+
+            ManageProduct manageProduct = new ManageProduct(products);
+
+            Provider Salter = new Provider()
+            {
+                Id = 1,
+                UserName = "SALTER"
+            };
+            Provider SubMedical = new Provider()
+            {
+                Id = 2,
+                UserName = "SUBMEDICAL"
+            };
+            Provider PalliserSA = new Provider()
+            {
+                Id = 3,
+                UserName = "PALLISERSA"
+            };
+            Provider Prov4 = new Provider()
+            {
+                Id = 4,
+                UserName = "PROV4"
+            };
+            Provider Prov5 = new Provider()
+            {
+                Id = 5,
+                UserName = "PROV5"
+            };
+
+            List<Provider> providers = new List<Provider>
+            {Salter, SubMedical, PalliserSA, Prov4, Prov5};
+
+            ManageProvider manageProvider = new ManageProvider(providers);
+
+            System.Console.WriteLine("Return a list of providers under the Name SUBMEDICAL:");
+            List<Provider> Pv0 = manageProvider.GetProviderByName("SUBMEDICAL");
+            foreach (var i in Pv0)
+            {
+                i.GetDetails();
+            }
+
+            System.Console.WriteLine("Return the first provider under the Name SALTER: ");
+            Provider Pv1 = manageProvider.GetFirstProviderByName("SALTER");
+            Pv1.GetDetails();
+
+            System.Console.WriteLine("Return the provider relative to the Id 5: ");
+            Provider Pv2 = manageProvider.GetProviderById(5);
+            Pv2.GetDetails();
+
+            System.Console.WriteLine("Return the first 5 Chemical products whose Price's higher than 10: ");
+            List<Chemical> Pr0 = manageProduct.Get5Chemical(10);
+            foreach (var i in Pr0)
+            {
+                i.GetDetails();
+            }
+
+            System.Console.WriteLine("Return a list of products where the Price is higher than 10, skipping the first 2: ");
+            IEnumerable<Product> Pr1 = manageProduct.GetProductPrice(10);
+            foreach (var i in Pr1)
+            {
+                i.GetDetails();
+            }
+
+            System.Console.WriteLine("Return the average Price of all products: ");
+            double A = manageProduct.GetAveragePrice();
+            System.Console.WriteLine(A);
+
+            System.Console.WriteLine("Return the highest Price of all products: ");
+            Product Pr2 = manageProduct.GetMaxPrice();
+            Pr2.GetDetails();
+
+            System.Console.WriteLine("Return the number of Chemical products of Tunis City: ");
+            int B = manageProduct.GetCountProduct("Tunis");
+            System.Console.WriteLine(B);
+
+            System.Console.WriteLine("Return a list of Chemical products ordered by City: ");
+            IEnumerable<Chemical> Ch0 = manageProduct.GetChemicalCity();
+            foreach (var i in Ch0)
+            {
+                i.GetDetails();
+            }
+            System.Console.WriteLine("Return a list of Chemical products ordered and grouped by City: ");
+            manageProduct.GetChemicalGroupByCity();
+
+            System.Console.WriteLine("--- ANONYMOUS Methods ---");
+            System.Console.WriteLine("Return a list of products where their names start with A: ");
+            List<Product> Pr3 = manageProduct.FindProduct("A");
+            foreach (var p in Pr3)
+            {
+                p.GetDetails();
+            }
+
+            System.Console.WriteLine("Return a list of products that belong to the Category Fruit: ");
+            List<Product> Pr4 = manageProduct.ScanProduct(Fruit);
+            foreach (var p in Pr4)
+            {
+                p.GetDetails();
+            }
+
+            System.Console.WriteLine("--- LAMBDA Expressions ---");
+            System.Console.WriteLine("Return a list of products where their names start with A: ");
+            List<Product> Pr5 = manageProduct.FindProduct("A");
+            foreach (var p in Pr5)
+            {
+                p.GetDetails();
+            }
+
+            System.Console.WriteLine("Return a list of products that belong to the Category Fruit: ");
+            List<Product> Pr6 = manageProduct.ScanProduct(Fruit);
+            foreach (var p in Pr6)
+            {
+                p.GetDetails();
+            }
+
+            System.Console.WriteLine("--- EXTENSION Methods --");
+            System.Console.WriteLine("Put in capitals the Name of the Product Apple: ");
+            manageProduct.UpperName(Apple);
+            Apple.GetDetails();
+            System.Console.WriteLine("Return True if the Product Apple belongs to the Category Fruit: ");
+            System.Console.WriteLine(manageProduct.InCategory(Fruit, Apple));
             System.Console.ReadKey();
         }
     }
