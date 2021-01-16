@@ -13,7 +13,6 @@ namespace GP.Service
         {
             P.Name = P.Name.ToUpper();
         }
-
         public static bool InCategory(this ManageProduct MP, Category Cat, Product P)
         {
             return (P.Category.Equals(Cat));

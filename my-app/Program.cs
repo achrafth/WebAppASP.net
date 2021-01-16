@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GP.Service;
+using GP.Data;
 
 namespace my_app
 {
@@ -199,7 +200,7 @@ namespace my_app
             System.Console.WriteLine("Initial Value: " + P3.IsApproved);
             Provider.SetIsApproved(P3);
             System.Console.WriteLine("Password: " + P3.Password);
-            System.Console.WriteLine(P3.IsApproved);*/
+            System.Console.WriteLine(P3.IsApproved);
             Category Fruit = new Category()
             { Name = "Fruit" };
             Category Alimentaire = new Category()
@@ -378,14 +379,14 @@ namespace my_app
 
             System.Console.WriteLine("--- LAMBDA Expressions ---");
             System.Console.WriteLine("Return a list of products where their names start with A: ");
-            List<Product> Pr5 = manageProduct.FindProduct("A");
+            List<Product> Pr5 = manageProduct.FindProducts("A");
             foreach (var p in Pr5)
             {
                 p.GetDetails();
             }
 
             System.Console.WriteLine("Return a list of products that belong to the Category Fruit: ");
-            List<Product> Pr6 = manageProduct.ScanProduct(Fruit);
+            List<Product> Pr6 = manageProduct.ScanProducts(Fruit);
             foreach (var p in Pr6)
             {
                 p.GetDetails();
@@ -397,6 +398,17 @@ namespace my_app
             Apple.GetDetails();
             System.Console.WriteLine("Return True if the Product Apple belongs to the Category Fruit: ");
             System.Console.WriteLine(manageProduct.InCategory(Fruit, Apple));
+            System.Console.ReadKey();*/
+            GPContext X = new GPContext();
+            Provider Sater = new Provider()
+            {
+                Id = 1,
+                DateCreated = new DateTime(2020, 10, 24),
+                UserName = "SALTER"
+            };
+            X.Providers.Add(Sater);
+            X.SaveChanges();
+            System.Console.WriteLine("DATABASE CREATED!");
             System.Console.ReadKey();
         }
     }

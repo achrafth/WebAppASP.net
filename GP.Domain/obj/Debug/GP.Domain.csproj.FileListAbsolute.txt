@@ -1,5 +1,11 @@
+D:\.net\my-app\GP.Domain\bin\Debug\GP.Domain.dll.config
 D:\.net\my-app\GP.Domain\bin\Debug\GP.Domain.dll
 D:\.net\my-app\GP.Domain\bin\Debug\GP.Domain.pdb
+D:\.net\my-app\GP.Domain\bin\Debug\EntityFramework.dll
+D:\.net\my-app\GP.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\.net\my-app\GP.Domain\bin\Debug\EntityFramework.xml
+D:\.net\my-app\GP.Domain\bin\Debug\EntityFramework.SqlServer.xml
 D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.csproj.CoreCompileInputs.cache
+D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.csproj.CopyComplete
 D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.dll
 D:\.net\my-app\GP.Domain\obj\Debug\GP.Domain.pdb

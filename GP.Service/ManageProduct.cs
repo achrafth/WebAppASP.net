@@ -21,11 +21,11 @@ namespace GP.Service
             FindProduct = delegate (string C)
             {
                 List<Product> ListProds = new List<Product>();
-                foreach (Product p in products)
+                foreach (Product P in products)
                 {
-                    if (p.Name.ToUpper().StartsWith(C.ToUpper()))
+                    if (P.Name.ToUpper().StartsWith(C.ToUpper()))
                     {
-                        ListProds.Add(p);
+                        ListProds.Add(P);
                     }
                 }
                 return ListProds;
@@ -34,11 +34,11 @@ namespace GP.Service
             FindProducts = (string C) =>
             {
                 List<Product> ListProds = new List<Product>();
-                foreach (Product p in products)
+                foreach (Product P in products)
                 {
-                    if (p.Name.ToUpper().StartsWith(C.ToUpper()))
+                    if (P.Name.ToUpper().StartsWith(C.ToUpper()))
                     {
-                        ListProds.Add(p);
+                        ListProds.Add(P);
                     }
                 }
                 return ListProds;
@@ -48,11 +48,11 @@ namespace GP.Service
             ScanProduct = delegate (Category Category)
             {
                 List<Product> ListProds = new List<Product>();
-                foreach (Product p in products)
+                foreach (Product P in products)
                 {
-                    if (p.Category.Equals(Category))
+                    if (P.Category.Equals(Category))
                     {
-                        ListProds.Add(p);
+                        ListProds.Add(P);
                     }
                 }
                 return ListProds;
@@ -61,11 +61,11 @@ namespace GP.Service
             ScanProducts = (Category Category) =>
             {
                 List<Product> ListProds = new List<Product>();
-                foreach (Product p in products)
+                foreach (Product P in products)
                 {
-                    if (p.Category.Equals(Category))
+                    if (P.Category.Equals(Category))
                     {
-                        ListProds.Add(p);
+                        ListProds.Add(P);
                     }
                 }
                 return ListProds;
