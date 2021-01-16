@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B76FA2A-9540-43CD-AB31-F6C797536D1B}</ProjectGuid>
+    <ProjectGuid>{4567E2E1-6C97-4EC9-B974-7940E421E36F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>my_app</RootNamespace>
-    <AssemblyName>my-app</AssemblyName>
+    <RootNamespace>GP.Console</RootNamespace>
+    <AssemblyName>GP.Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GP.Domain\GP.Domain.csproj">
-      <Project>{daf34514-3afa-4da2-a5f7-ddbff9753d29}</Project>
-      <Name>GP.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
