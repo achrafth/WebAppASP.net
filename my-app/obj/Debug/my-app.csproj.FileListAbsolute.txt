@@ -1,0 +1,7 @@
+D:\.net\my-app\my-app\bin\Debug\my-app.exe.config
+D:\.net\my-app\my-app\bin\Debug\my-app.exe
+D:\.net\my-app\my-app\bin\Debug\my-app.pdb
+D:\.net\my-app\my-app\obj\Debug\my-app.csprojAssemblyReference.cache
+D:\.net\my-app\my-app\obj\Debug\my-app.csproj.CoreCompileInputs.cache
+D:\.net\my-app\my-app\obj\Debug\my-app.exe
+D:\.net\my-app\my-app\obj\Debug\my-app.pdb
