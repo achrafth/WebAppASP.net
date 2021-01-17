@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace GP.Data.Conventions
 {
-    public class DateTime2Convention : Convention
+    public class CINConvention : Convention
     {
-        public DateTime2Convention()
+        public CINConvention()
         {
-            this.Properties<DateTime>().Configure(C =>
-
-            C.HasColumnType("datetime2"));
+            this.Properties().Where(C => C.Name.Equals("CIN"))
+                .Configure(C => C.IsKey());
         }
     }
 }

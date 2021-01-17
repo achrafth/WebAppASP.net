@@ -55,6 +55,7 @@
     <Compile Include="Configurations\CategoryConfiguration.cs" />
     <Compile Include="Configurations\FactureConfiguration.cs" />
     <Compile Include="Configurations\ProductConfiguration.cs" />
+    <Compile Include="Conventions\CINConvention.cs" />
     <Compile Include="Conventions\DateTime2Convention.cs" />
     <Compile Include="GPContext.cs" />
     <Compile Include="Migrations\202101162007100_InitialCreate.cs" />
@@ -92,6 +93,10 @@
     <Compile Include="Migrations\202101170222390_ClientFacture.cs" />
     <Compile Include="Migrations\202101170222390_ClientFacture.designer.cs">
       <DependentUpon>202101170222390_ClientFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101171409091_CIN.cs" />
+    <Compile Include="Migrations\202101171409091_CIN.designer.cs">
+      <DependentUpon>202101171409091_CIN.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101170222390_ClientFacture.resx">
       <DependentUpon>202101170222390_ClientFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101171409091_CIN.resx">
+      <DependentUpon>202101171409091_CIN.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,7 +15,7 @@ namespace GP.Service
         }
         public static bool InCategory(this ManageProduct MP, Category Cat, Product P)
         {
-            return (P.Category.Equals(Cat));
+            return (P.MyCategory.Equals(Cat));
         }
     }
 }

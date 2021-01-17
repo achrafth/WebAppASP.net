@@ -20,8 +20,10 @@ namespace GP.Data
             modelBuilder.Configurations.Add(new CategoryConfiguration());
             modelBuilder.Configurations.Add(new ProductConfiguration());
             modelBuilder.Configurations.Add(new AddressConfiguration());
+            modelBuilder.Configurations.Add(new FactureConfiguration());
+
             modelBuilder.Conventions.Add(new DateTime2Convention());
-            
+            modelBuilder.Conventions.Add(new CINConvention());
             //TPT
             //modelBuilder.Entity<Chemical>().ToTable("Chemicals");
             //modelBuilder.Entity<Biological>().ToTable("Biologicals");

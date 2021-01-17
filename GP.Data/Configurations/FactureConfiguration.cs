@@ -12,7 +12,7 @@ namespace GP.Data.Configurations
     {
         public FactureConfiguration()
         {
-            //Key composed of 3
+            //Key composed of 3 params
             HasKey(C => new
             {
                 C.ClientFk,

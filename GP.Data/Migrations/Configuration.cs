@@ -16,10 +16,10 @@
 
         protected override void Seed(GP.Data.GPContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            //This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            //You can use the DbSet<T>.AddOrUpdate() helper extension method
+            //to avoid creating duplicate seed data.
             context.Categories.AddOrUpdate(
                 P => P.Name,
                 new Category { Name = "Médicament" },

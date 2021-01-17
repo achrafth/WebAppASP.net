@@ -50,7 +50,7 @@ namespace GP.Service
                 List<Product> ListProds = new List<Product>();
                 foreach (Product P in products)
                 {
-                    if (P.Category.Equals(Category))
+                    if (P.MyCategory.Equals(Category))
                     {
                         ListProds.Add(P);
                     }
@@ -63,7 +63,7 @@ namespace GP.Service
                 List<Product> ListProds = new List<Product>();
                 foreach (Product P in products)
                 {
-                    if (P.Category.Equals(Category))
+                    if (P.MyCategory.Equals(Category))
                     {
                         ListProds.Add(P);
                     }
