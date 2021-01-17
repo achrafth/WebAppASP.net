@@ -47,8 +47,9 @@
         <dt>
             @Html.DisplayNameFor(model => model.ImageName)
         </dt>
+
         <dd>
-            @Html.DisplayFor(model => model.ImageName)
+            @Html.Partial("_View", Model)
         </dd>
 
         <dt>
@@ -57,6 +58,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emballage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emballage)
         </dd>
 
     </dl>

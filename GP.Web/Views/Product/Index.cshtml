@@ -42,6 +42,9 @@
         <th>
             @Html.DisplayNameFor(model => model.CategoryId)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emballage)
+        </th>
         <th></th>
     </tr>
 
@@ -64,13 +67,16 @@
         @Html.DisplayFor(modelItem => item.Quantity)
     </td>
     @*<td>
-        @{string path = "~/Content/Upload/" + @item.ImageName;}
+            @{string path = "~/Content/Upload/" + @item.ImageName;}
 
-        <img src="@Url.Content(path)" width="50" height="50" />
-    </td>*@
+            <img src="@Url.Content(path)" width="50" height="50" />
+        </td>*@
     <td> @Html.Partial("_View", item)</td>
     <td>
         @Html.DisplayFor(modelItem => item.CategoryId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Emballage)
     </td>
     <td>
         @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) |

@@ -109,6 +109,10 @@
     <Compile Include="Migrations\202101172055397_Date.designer.cs">
       <DependentUpon>202101172055397_Date.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101172143377_Emballage.cs" />
+    <Compile Include="Migrations\202101172143377_Emballage.designer.cs">
+      <DependentUpon>202101172143377_Emballage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -155,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101172055397_Date.resx">
       <DependentUpon>202101172055397_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101172143377_Emballage.resx">
+      <DependentUpon>202101172143377_Emballage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

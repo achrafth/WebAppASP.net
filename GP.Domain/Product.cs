@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace GP.Domain
 {
+    public enum Emballage { PLASTIC, METAL, VERS };
     //abstract for TPC
     public /*abstract*/ class Product : Concept
     {
@@ -32,6 +33,7 @@ namespace GP.Domain
         public virtual Category MyCategory { get; set; }
         public ICollection<Provider> Providers { get; set; }
         public virtual ICollection<Facture> Factures { get; set; }
+        public Emballage Emballage { get; set; }
         public override void GetDetails()
         {
             System.Console.WriteLine("Product Id: " + ProductId + " Name: " + Name +

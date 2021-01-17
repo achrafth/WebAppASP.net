@@ -25,3 +25,4 @@ D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.Convention.resources
 D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.ClientFacture.resources
 D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.CIN.resources
 D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.Date.resources
+D:\.net\my-app\GP.Data\obj\Debug\GP.Data.Migrations.Emballage.resources

@@ -82,25 +82,33 @@ namespace GP.Web.Controllers
         //GET: Product/Edit/5
         public ActionResult Edit(int id)
         {
+            var categories = categoryService.GetMany();
+            ViewBag.CategoryId = new SelectList(categories, "CategoryId", "Name");
             return View(productService.GetById(id));
         }
 
         //POST: Product/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, Product P)
+        public ActionResult Edit(int id, Product product, HttpPostedFileBase file)
         {
-            try
+            product.ImageName = file.FileName;
+            if (file.ContentLength > 0)
             {
-                //TODO: Add update logic here
-                P = productService.GetById(id);
-                productService.Update(P);
+                var path = Path.Combine(Server.MapPath("~/Content/Upload/"),
+                file.FileName);
+                file.SaveAs(path);
+            }
+                var p = productService.GetById(id);
+                p.CategoryId = product.CategoryId;
+                p.DateProd = product.DateProd;
+                p.Description = product.Description;
+                p.ImageName = product.ImageName;
+                p.Name = product.Name;
+                p.Price = product.Price;
+                p.ProductId = product.ProductId;
+                productService.Update(p);
                 productService.Commit();
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         //GET: Product/Delete/5
