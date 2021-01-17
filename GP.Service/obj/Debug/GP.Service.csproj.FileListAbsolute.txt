@@ -16,3 +16,5 @@ D:\.net\my-app\GP.Service\obj\Debug\GP.Service.pdb
 D:\.net\my-app\GP.Service\bin\Debug\GP.Data.dll
 D:\.net\my-app\GP.Service\bin\Debug\GP.Data.pdb
 D:\.net\my-app\GP.Service\bin\Debug\GP.Data.dll.config
+D:\.net\my-app\GP.Service\bin\Debug\ServicePattern.dll
+D:\.net\my-app\GP.Service\bin\Debug\ServicePattern.pdb

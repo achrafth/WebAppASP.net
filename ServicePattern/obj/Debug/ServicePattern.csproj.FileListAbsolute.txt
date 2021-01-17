@@ -1,0 +1,15 @@
+D:\.net\my-app\ServicePattern\bin\Debug\ServicePattern.dll
+D:\.net\my-app\ServicePattern\bin\Debug\ServicePattern.pdb
+D:\.net\my-app\ServicePattern\bin\Debug\GP.Data.dll
+D:\.net\my-app\ServicePattern\bin\Debug\EntityFramework.dll
+D:\.net\my-app\ServicePattern\bin\Debug\GP.Domain.dll
+D:\.net\my-app\ServicePattern\bin\Debug\GP.Data.pdb
+D:\.net\my-app\ServicePattern\bin\Debug\GP.Data.dll.config
+D:\.net\my-app\ServicePattern\bin\Debug\EntityFramework.xml
+D:\.net\my-app\ServicePattern\bin\Debug\GP.Domain.pdb
+D:\.net\my-app\ServicePattern\bin\Debug\GP.Domain.dll.config
+D:\.net\my-app\ServicePattern\obj\Debug\ServicePattern.csprojAssemblyReference.cache
+D:\.net\my-app\ServicePattern\obj\Debug\ServicePattern.csproj.CoreCompileInputs.cache
+D:\.net\my-app\ServicePattern\obj\Debug\ServicePattern.csproj.CopyComplete
+D:\.net\my-app\ServicePattern\obj\Debug\ServicePattern.dll
+D:\.net\my-app\ServicePattern\obj\Debug\ServicePattern.pdb

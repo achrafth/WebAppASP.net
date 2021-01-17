@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GP.Service", "GP.Service\GP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GP.Data", "GP.Data\GP.Data.csproj", "{9466EF2F-DF26-45BD-9D3A-A8FC9DE587A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicePattern", "ServicePattern\ServicePattern.csproj", "{A82F7D11-01B4-4EC2-BD4B-F9967E7B269A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9466EF2F-DF26-45BD-9D3A-A8FC9DE587A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9466EF2F-DF26-45BD-9D3A-A8FC9DE587A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9466EF2F-DF26-45BD-9D3A-A8FC9DE587A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82F7D11-01B4-4EC2-BD4B-F9967E7B269A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82F7D11-01B4-4EC2-BD4B-F9967E7B269A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82F7D11-01B4-4EC2-BD4B-F9967E7B269A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82F7D11-01B4-4EC2-BD4B-F9967E7B269A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

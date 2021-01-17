@@ -58,6 +58,13 @@
     <Compile Include="Conventions\CINConvention.cs" />
     <Compile Include="Conventions\DateTime2Convention.cs" />
     <Compile Include="GPContext.cs" />
+    <Compile Include="Infrastuctures\DatabaseFactory.cs" />
+    <Compile Include="Infrastuctures\Disposable.cs" />
+    <Compile Include="Infrastuctures\IDatabaseFactory.cs" />
+    <Compile Include="Infrastuctures\IUnitOfWork.cs" />
+    <Compile Include="Infrastuctures\IRepositoryBase.cs" />
+    <Compile Include="Infrastuctures\RepositoryBase.cs" />
+    <Compile Include="Infrastuctures\UnitOfWork.cs" />
     <Compile Include="Migrations\202101162007100_InitialCreate.cs" />
     <Compile Include="Migrations\202101162007100_InitialCreate.designer.cs">
       <DependentUpon>202101162007100_InitialCreate.cs</DependentUpon>
@@ -143,6 +150,7 @@
       <DependentUpon>202101171409091_CIN.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

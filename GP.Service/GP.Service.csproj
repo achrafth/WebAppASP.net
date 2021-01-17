@@ -51,9 +51,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManageProduct.cs" />
-    <Compile Include="ManageProvider.cs" />
-    <Compile Include="ProductExtension.cs" />
+    <Compile Include="Collections\ManageProduct.cs" />
+    <Compile Include="Collections\ManageProvider.cs" />
+    <Compile Include="Collections\ProductExtension.cs" />
+    <Compile Include="FactureService.cs" />
+    <Compile Include="IFactureService.cs" />
+    <Compile Include="IProductService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +68,10 @@
     <ProjectReference Include="..\GP.Domain\GP.Domain.csproj">
       <Project>{daf34514-3afa-4da2-a5f7-ddbff9753d29}</Project>
       <Name>GP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServicePattern\ServicePattern.csproj">
+      <Project>{a82f7d11-01b4-4ec2-bd4b-f9967e7b269a}</Project>
+      <Name>ServicePattern</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -19,3 +19,5 @@ D:\.net\my-app\my-app\bin\Debug\GP.Data.pdb
 D:\.net\my-app\my-app\bin\Debug\GP.Data.dll.config
 D:\.net\my-app\my-app\bin\Debug\EntityFramework.xml
 D:\.net\my-app\my-app\bin\Debug\EntityFramework.SqlServer.xml
+D:\.net\my-app\my-app\bin\Debug\ServicePattern.dll
+D:\.net\my-app\my-app\bin\Debug\ServicePattern.pdb
