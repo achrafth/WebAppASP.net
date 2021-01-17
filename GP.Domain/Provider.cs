@@ -51,7 +51,7 @@ namespace GP.Domain
             }
         }
         public string UserName { get; set; }
-        public List<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
         public static void SetIsApproved(Provider P)
         {
             P.IsApproved = string.Compare(P.Password, P.ConfirmPassword) == 0;

@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace GP.Domain
 {
-    public class Product : Concept
+    //abstract for TPC
+    public /*abstract*/ class Product : Concept
     {
         public int ProductId { get; set; }
         [Required(ErrorMessage = "Name Required")]
@@ -28,9 +29,9 @@ namespace GP.Domain
         public string ImageName { get; set; }
         public int? CategoryId { get; set; }
         [ForeignKey("CategoryId ")]
-        public Category Category { get; set; }
-        public List<Provider> Providers { get; set; }
-
+        public virtual Category MyCategory { get; set; }
+        public ICollection<Provider> Providers { get; set; }
+        public virtual ICollection<Facture> Factures { get; set; }
         public override void GetDetails()
         {
             System.Console.WriteLine("Product Id: " + ProductId + " Name: " + Name +

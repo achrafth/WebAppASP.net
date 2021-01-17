@@ -51,6 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\AddressConfiguration.cs" />
+    <Compile Include="Configurations\CategoryConfiguration.cs" />
+    <Compile Include="Configurations\FactureConfiguration.cs" />
+    <Compile Include="Configurations\ProductConfiguration.cs" />
+    <Compile Include="Conventions\DateTime2Convention.cs" />
     <Compile Include="GPContext.cs" />
     <Compile Include="Migrations\202101162007100_InitialCreate.cs" />
     <Compile Include="Migrations\202101162007100_InitialCreate.designer.cs">
@@ -71,6 +76,22 @@
     <Compile Include="Migrations\202101162251078_Annotations.cs" />
     <Compile Include="Migrations\202101162251078_Annotations.designer.cs">
       <DependentUpon>202101162251078_Annotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\.cs" />
+    <Compile Include="Migrations\.designer.cs">
+      <DependentUpon>.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101170207037_NOW.cs" />
+    <Compile Include="Migrations\202101170207037_NOW.designer.cs">
+      <DependentUpon>202101170207037_NOW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101170213388_Convention.cs" />
+    <Compile Include="Migrations\202101170213388_Convention.designer.cs">
+      <DependentUpon>202101170213388_Convention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101170222390_ClientFacture.cs" />
+    <Compile Include="Migrations\202101170222390_ClientFacture.designer.cs">
+      <DependentUpon>202101170222390_ClientFacture.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +121,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101162251078_Annotations.resx">
       <DependentUpon>202101162251078_Annotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\.resx">
+      <DependentUpon>.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101170207037_NOW.resx">
+      <DependentUpon>202101170207037_NOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101170213388_Convention.resx">
+      <DependentUpon>202101170213388_Convention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101170222390_ClientFacture.resx">
+      <DependentUpon>202101170222390_ClientFacture.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
