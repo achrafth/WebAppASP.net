@@ -17,7 +17,7 @@ namespace GP.Domain
         [MaxLength(50)]
         public string Name { get; set; }
         [Display(Name = "Production Date")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         public DateTime DateProd { get; set; }
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }

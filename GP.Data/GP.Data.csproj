@@ -105,6 +105,10 @@
     <Compile Include="Migrations\202101171409091_CIN.designer.cs">
       <DependentUpon>202101171409091_CIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101172055397_Date.cs" />
+    <Compile Include="Migrations\202101172055397_Date.designer.cs">
+      <DependentUpon>202101172055397_Date.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -148,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101171409091_CIN.resx">
       <DependentUpon>202101171409091_CIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101172055397_Date.resx">
+      <DependentUpon>202101172055397_Date.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

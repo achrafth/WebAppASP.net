@@ -54,9 +54,7 @@ namespace ServicePattern
             {
                 utwk.Commit();
             }
-            catch (Exception)
-            //catch (Exception Ex)
-
+            catch (Exception Ex)
             {
                 throw;
             }

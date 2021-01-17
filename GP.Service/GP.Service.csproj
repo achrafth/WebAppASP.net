@@ -51,10 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryService.cs" />
     <Compile Include="Collections\ManageProduct.cs" />
     <Compile Include="Collections\ManageProvider.cs" />
     <Compile Include="Collections\ProductExtension.cs" />
     <Compile Include="FactureService.cs" />
+    <Compile Include="ICategoryService.cs" />
     <Compile Include="IFactureService.cs" />
     <Compile Include="IProductService.cs" />
     <Compile Include="ProductService.cs" />
